@@ -1,0 +1,29 @@
+﻿
+<div class="row">
+    <div class="col-12">
+        <p class="h2 fw-bold">@ViewData["Header"]</p>
+    </div>
+    <div class="col-12">
+        @foreach(var item in (List<Student>)ViewData["Students"])
+        {
+            <div class="m-5">
+                <div class="row">
+                    <p class="h4 col-3">Id: </p>
+                    <p class="h4 col-9">@item.StudentId</p>
+                </div>
+                <div class="row">
+                    <p class="h4 col-3">Name: </p>
+                    <p class="h4 col-9">@item.Name</p>
+                </div>
+                <div class="row">
+                    <p class="h4 col-3">Brand: </p>
+                    <p class="h4 col-9">@item.Brand</p>
+                </div>
+                <div class="row">
+                    <p class="h4 col-3">Section: </p>
+                    <p class="h4 col-9">@item.Section</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

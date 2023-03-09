@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\StudyInFPolyTechnic\\Lab\\Net4\\Code\\Lab_2_3_Net_4\\wwwroot\\bootstrap-5.3.0-alpha1\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap-5.3.0-alpha1\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\StudyInFPolyTechnic\\Lab\\Net4\\Code\\Lab_2_3_Net_4\\wwwroot\\bootstrap-5.3.0-alpha1\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap-5.3.0-alpha1\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\StudyInFPolyTechnic\\Lab\\Net4\\Code\\Lab_2_3_Net_4\\wwwroot\\bootstrap-5.3.0-alpha1\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\bootstrap-5.3.0-alpha1\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\StudyInFPolyTechnic\\Lab\\Net4\\Code\\Lab_2_3_Net_4\\wwwroot\\bootstrap-5.3.0-alpha1\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\bootstrap-5.3.0-alpha1\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\StudyInFPolyTechnic\\Lab\\Net4\\Code\\Lab_2_3_Net_4\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Lab_2_3_Net_4.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Lab_2_3_Net_4.props",
+      "PackagePath": "build\\Lab_2_3_Net_4.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Lab_2_3_Net_4.props",
+      "PackagePath": "buildMultiTargeting\\Lab_2_3_Net_4.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Lab_2_3_Net_4.props",
+      "PackagePath": "buildTransitive\\Lab_2_3_Net_4.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

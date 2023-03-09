@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon" />
+    <title>@ViewData["Title"] - Lap_5_1_Net_4</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+
+</head>
+<body data-bs-theme="dark">
+    <header class="container">
+        <p class="h1 text-center fw-bold my-3">Cities</p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#City" aria-controls="City"><i class="fa-solid fa-bars"></i> Choice a thing</button>
+
+        <hr />
+    </header>
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <footer class="container">
+        <hr />
+        <p class="h3 text-center">Trần Phú Đạt - Footer</p>
+    </footer>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="City" aria-labelledby="CityLabel">
+        <div class="offcanvas-header">
+            <p class="offcanvas-title h3" id="CityLabel"><i class="fa-solid fa-bars"></i> Choice a thing</p>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-end">
+            <div class="row">
+                <button class="fw-bold h5 btn text-body border-0 text-end" type="button" data-bs-toggle="collapse" data-bs-target="#Nation" aria-expanded="false" aria-controls="Nation">
+                    List Nation <i class="fa-solid fa-caret-down"></i>
+                </button>
+            </div>
+           
+            <div class="collapse" id="Nation">
+                <div class="row mx-2 g-3">
+                    <a class="text-decoration-none" href="#">Vietnam</a>
+                    <a class="text-decoration-none" href="#">France</a>
+                    <a class="text-decoration-none" href="#">Japan</a>
+                    <a class="text-decoration-none" href="#">England</a>
+                </div>
+            </div>
+            <div class="row">
+                <button class="fw-bold h5 btn text-body border-0 text-end" type="button" data-bs-toggle="collapse" data-bs-target="#cities" aria-expanded="false" aria-controls="cities">
+                    List Cities <i class="fa-solid fa-caret-down"></i>
+                </button>
+            </div>
+           
+            <div class="collapse" id="cities">
+                <div class="row mx-2 g-3">
+                    <a class="text-decoration-none" href="@Url.Action("London", "Home")">London</a>
+                    <a class="text-decoration-none" href="@Url.Action("Paris", "Home")">Paris</a>
+                    <a class="text-decoration-none" href="@Url.Action("Tokyo", "Home")">Tokyo</a>
+                    <a class="text-decoration-none" href="@Url.Action("HoChiMinh", "Home")">Ho Chi Minh</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4552defb60.js" crossorigin="anonymous"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

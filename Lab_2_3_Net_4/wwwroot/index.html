@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_2_3_Net_4</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1/css/bootstrap.min.css">
+    <script src="./bootstrap-5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body data-bs-theme="dark">
+    <header class="container text-center pt-5">
+        <p class="h2 text-danger">Hello, Welcome to FPoly SignUp Form</p>
+    </header>
+    <hr>
+    <main class="container">
+        <form class="card">
+            <div class="card-header">
+                <p class="h3">SignUp</p>
+                <p class="h6">Please fill in this form to create an account</p>
+            </div>
+            <div class="card-body row g-3">
+                <div class="col-12 col-md-6">
+                    <label class="form-label">Email</label><br>
+                    <input class="form-control bg-body" required type="email" placeholder="Enter Email">
+                </div>
+                <div class="col-12 col-md-6">
+                    <label class="form-label">Password</label><br>
+                    <input class="form-control bg-body" required type="password"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+                        placeholder="Enter Password">
+                </div>
+                <div class="col-12 col-md-6">
+                    <label class="form-label">Repeat Password</label><br>
+                    <input class="form-control bg-body" type="password" required placeholder="Enter Repeat Password">
+                </div>
+                <div class="form-check col-12 mx-2">
+                    <input class="form-check-input bg-body" type="checkbox">
+                    <label class="form-check-label">
+                        Remember me (optional)
+                    </label>
+                </div>
+                <div class="col-12">
+                    <p class="h6">By creating an account you agree to our
+                        <a href="#">Terms & Privacy</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-footer row g-3">
+                <div class="col-12 col-md-6">
+                    <input class="btn btn-danger w-100" type="reset" value="Cancel">
+                </div>
+                <div class="col-12 col-md-6">
+                    <input class="btn btn-success  w-100" type="submit" value="Sign Up" />
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

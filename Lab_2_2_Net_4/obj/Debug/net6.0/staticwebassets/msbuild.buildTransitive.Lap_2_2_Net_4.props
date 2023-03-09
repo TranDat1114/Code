@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Lap_2_2_Net_4.props" />
+</Project>

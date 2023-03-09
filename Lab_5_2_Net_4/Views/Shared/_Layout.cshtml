@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon" />
+    <title>@ViewData["Title"] - Lap_5_2_Net_4</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+
+</head>
+<body data-bs-theme="dark">
+    <header class="container">
+        <p class="h1 text-center fw-bold my-3">Student</p>
+                <hr />
+    </header>
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <footer class="container">
+        <hr />
+        <p class="h3 text-center">Trần Phú Đạt - Footer</p>
+    </footer>
+        <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4552defb60.js" crossorigin="anonymous"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

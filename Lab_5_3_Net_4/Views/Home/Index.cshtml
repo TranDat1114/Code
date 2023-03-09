@@ -1,0 +1,28 @@
+﻿<div class="row">
+    <div class="col-12">
+        <p class="h2 fw-bold">@ViewData["Header"]</p>
+    </div>
+    <div class="col-12">
+        @foreach(var item in (List<Employee>)ViewBag.Employees)
+        {
+            <div class="m-5">
+                <div class="row">
+                    <p class="h4 col-3">Id: </p>
+                    <p class="h4 col-9">@item.EmployeeId</p>
+                </div>
+                <div class="row">
+                    <p class="h4 col-3">Name: </p>
+                    <p class="h4 col-9">@item.Name</p>
+                </div>
+                <div class="row">
+                    <p class="h4 col-3">Address: </p>
+                    <p class="h4 col-9">@item.Address</p>
+                </div>
+                <div class="row">
+                    <p class="h4 col-3">Phone: </p>
+                    <p class="h4 col-9">@item.Phone</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

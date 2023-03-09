@@ -1,0 +1,98 @@
+﻿@using System.Globalization;
+@model Lab_7_2_Net_4.Models.Product;
+
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+}
+
+<div class="row">
+    <div class="col-12 col-lg-6">
+        <div class="row">
+            <img class="w-100 col-12 rounded-5 object-fit-cover" src="@Model.ProductImages.FirstOrDefault()?.Uri" alt="product_img" height="350" />
+        </div>
+        <hr />
+        <div class="row g-3">
+            @{
+                bool isFirst = true;
+                if(Model.ProductImages.Count() > 1)
+                {
+                    foreach(var item in Model.ProductImages)
+                    {
+                        if(isFirst)
+                        {
+                            isFirst = false;
+                        }
+                        else
+                        {
+                            <div class="col-4 col-md-3">
+                                <img class="w-100 rounded-5 object-fit-cover" height="100" src="@item.Uri" alt="product_img_2" />
+                            </div>
+                        }
+                    }
+                }
+            }
+        </div>
+        <hr class="d-lg-none" />
+    </div>
+    <div class="col-12 col-lg-6">
+        <div class="row g-3">
+            <p class="col-12 fw-bold h4">
+                @Model.ProductName
+            </p>
+            <p class="col-6 fw-bold h4">
+                @Model.Price.ToString("C", CultureInfo.GetCultureInfo("en-US"))
+            </p>
+            @{
+                var starPoint = 0;
+                foreach(var item in Model.Reviews)
+                {
+                    starPoint += item.Rating;
+                }
+                if(Model.Reviews.Count() == 0)
+                {
+
+                }
+                else
+                {
+                    starPoint = starPoint * 2 / Model.Reviews.Count();
+                }
+                <div class="col-6">
+                    <div class="row text-end">
+                        <p class="col-12 col-md-6 h6">
+                            @for(int i = 0 ; i < (int)starPoint / 2 ; i++)
+                            {
+                                <i class="fa-solid fa-star text-warning"></i>
+                            }
+                            @for(int i = 0 ; i < (starPoint % 2 == 0 ? 0 : 1) ; i++)
+                            {
+                                <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                            }
+                            @for(int i = 0 ; i < (10 - starPoint) / 2 ; i++)
+                            {
+                                <i class="fa-regular fa-star"></i>
+                            }
+                        </p>
+                        <p class="col-12 col-md-6 h5">
+                            @Model.Reviews.Count()
+                            Reviews
+                        </p>
+                    </div>
+                </div>
+            }
+            <div class="col-12">
+                <button class="text-uppercase w-100 btn btn-outline-warning" style="height:75px">Add to cart</button>
+            </div>
+            <div class="col-12">
+                <button class="text-uppercase w-100 btn btn-orange" style="height:75px">Buy it now</button>
+            </div>
+        </div>
+
+        <hr class="py-5" />
+
+        <div class="row g-3">
+            <p class="h5">
+                @Model.Description
+            </p>
+        </div>
+    </div>
+</div>

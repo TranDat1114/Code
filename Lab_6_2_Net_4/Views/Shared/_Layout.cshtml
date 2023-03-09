@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Lap_6_2_Net_4</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Lap_3_1_Net_4.styles.css" asp-append-version="true" />
+</head>
+<body data-bs-theme="dark">
+    <div class="min-vh-100">
+        <header class="container text-center my-3">
+            <p class="h1 text-orange">Công nghệ thông tin</p>
+        </header>
+        <div class="container min-vh-100">
+            <main role="main">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <footer class="container">
+        <p class="h6">
+            &copy; 2023 - Lap_3_1_Net_4 - TranPhuDat - <a asp-area="" asp-controller="Home" asp-action="Index">Index</a>
+        </p>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

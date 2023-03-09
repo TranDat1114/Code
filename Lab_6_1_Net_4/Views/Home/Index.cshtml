@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Ngành công nghệ thông tin";
+}
+
+<div class="row">
+    @foreach (var item in ViewBag.chuyenNganhs)
+    {
+        <div class="col-12 col-md-3">
+            <img class="w-100 img-thumbnail" src="@item.Image_string" alt="chuyenNganh" />
+            <p class="h6 text-uppercase">@item.Subname_string</p>
+        </div>
+    }
+
+</div>
