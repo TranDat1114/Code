@@ -11,7 +11,7 @@ internal class Program
         ConfigurationRoot config = (ConfigurationRoot)configuration.Build();
 
         var builder = WebApplication.CreateBuilder(args);
-        for(int i = 0 ; i < 2 ; i++)
+        for (int i = 0; i < 2; i++)
         {
             books.Add(new Book()
             {
@@ -24,9 +24,12 @@ internal class Program
         var app = builder.Build();
 
 
+
         app.Run(async context =>
         {
-            foreach(var item in books)
+            // câu a: 
+            await context.Response.WriteAsync($"{books[1].id}\n \n");
+            foreach (var item in books)
             {
                 await context.Response.WriteAsync($"{item.id}\n");
                 await context.Response.WriteAsync($"{item.author}\n");

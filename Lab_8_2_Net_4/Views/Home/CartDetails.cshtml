@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Giỏ hàng";
+}
+
+@{
+    if(SessionNJsonHelper.GetObjectAsJson<List<CartItem>>(Context.Session, "CartItem") != null)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Sub Total</th>
+                    <th scope="col">Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int count = 0;
+                    foreach(var item in SessionNJsonHelper.GetObjectAsJson<List<CartItem>>(Context.Session, "CartItem"))
+                    {
+                        <tr>
+                            <td>@(count += 1)</td>
+                            <td>@item.Product.ProductName</td>
+                            <td>@item.Product.Price</td>
+                            <td>@item.Quantity</td>
+                            <td>@(item.Quantity * item.Product.Price)</td>
+                            <td>
+                                <a asp-controller="Home" asp-action="Remove" asp-route-idInCart="@count">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </a>
+
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+        <hr />
+        <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-6">
+                        <a class="btn w-100 btn-outline-primary text-center" asp-controller="Home" asp-action="Index">
+                            Continue Shopping
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a class="w-100 btn btn-outline-primary text-center" asp-controller="Home" asp-action="SaveCartsToDatabase">
+                            Done
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-6">
+
+                <p class="h5 text-center">
+                    Total:  @(SessionNJsonHelper.GetObjectAsJson<List<CartItem>>(Context.Session, "CartItem").Sum(p => p.Product.Price * p.Quantity))
+                </p>
+
+            </div>
+        </div>
+    }
+    else
+    {
+        <p>Không có sản phẩm nào</p>
+    }
+
+}
