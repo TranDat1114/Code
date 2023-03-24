@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UF3F/kCDkx+EK1nnpY4UShFFO6u6QMc40jNsnuyIY2qiC4ozwQS9bONnHcmCzDvZ48ng9s+roEr4Kbz173n/OA==",
+  "dgSpecHash": "6HgfCvCpN17egM3ikX60stvUnydhIa3IISEgwI4Nb/UK5zJKy+6fiLmiE2Seoc7jROeQSfF1us9GaCHUjV7VAA==",
   "success": true,
-  "projectFilePath": "D:\\StudyInFPolyTechnic\\Lab\\Net4\\Code\\Lab_8_2_Net_4_TEST_1\\Lab_8_2_Net_4.csproj",
+  "projectFilePath": "D:\\StudyInFPolyTechnic\\Lab\\Net4\\Code\\Lab_8_2_Net_4\\Lab_8_2_Net_4.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PhuDatTran\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\PhuDatTran\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

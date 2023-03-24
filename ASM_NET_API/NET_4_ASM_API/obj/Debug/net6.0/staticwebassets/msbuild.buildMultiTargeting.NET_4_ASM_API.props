@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NET_4_ASM_API.props" />
+</Project>

@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Routing.Constraints;
+
 namespace Lab_4_4_Net_4
 {
     public class Program
@@ -13,21 +15,21 @@ namespace Lab_4_4_Net_4
             app.UseEndpoints(endpoints =>
             {
                 //Câu c
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: @"{controller}/{action}",
-                    new { controller = "Home", action = "Index" });
+                // endpoints.MapControllerRoute(
+                //     name: "default",
+                //     pattern: @"{controller}/{action}",
+                //     new { controller = "Home", action = "Index" });
                 //Câu a
                 //endpoints.MapControllerRoute(
                 //    name: "default",
                 //    pattern: @"{controller}/{action}/{year:regex(^\d{{4}}$)?}",
                 //    new { controller = "Home", action = "Index" });
 
-                //Câu b
-                //endpoints.MapControllerRoute(
-                //        name: "default",
-                //        pattern: @"{controller}/{action}/{year?}",
-                //        new { controller = "Home", action = "Index" }, new { year = new RegexRouteConstraint(@"^\d{4}$") });
+                // Câu b
+                endpoints.MapControllerRoute(
+                       name: "default",
+                       pattern: @"{controller}/{action}/{year?}",
+                       new { controller = "Home", action = "Index" }, new { year = new RegexRouteConstraint(@"^\d{4}$") });
             });
             app.Run();
         }

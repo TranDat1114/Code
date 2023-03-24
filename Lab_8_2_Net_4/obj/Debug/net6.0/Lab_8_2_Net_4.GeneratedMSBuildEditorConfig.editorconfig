@@ -9,45 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Lab_8_2_Net_4
 build_property.RootNamespace = Lab_8_2_Net_4
-build_property.ProjectDir = D:\StudyInFPolyTechnic\Lab\Net4\Code\Lab_8_2_Net_4_TEST_1\
+build_property.ProjectDir = D:\StudyInFPolyTechnic\Lab\Net4\Code\Lab_8_2_Net_4\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\StudyInFPolyTechnic\Lab\Net4\Code\Lab_8_2_Net_4_TEST_1
+build_property.MSBuildProjectDirectory = D:\StudyInFPolyTechnic\Lab\Net4\Code\Lab_8_2_Net_4
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4_TEST_1/Views/Account/Login.cshtml]
+[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4_TEST_1/Views/Account/SignUp.cshtml]
+[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4/Views/Account/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4_TEST_1/Views/Home/CartDetails.cshtml]
+[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4/Views/Home/CartDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXJ0RGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4_TEST_1/Views/Home/Index.cshtml]
+[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4_TEST_1/Views/Home/ProductDetails.cshtml]
+[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4/Views/Home/ProductDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0RGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4_TEST_1/Views/Shared/_Layout.cshtml]
+[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4_TEST_1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4_TEST_1/Views/_ViewImports.cshtml]
+[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4_TEST_1/Views/_ViewStart.cshtml]
+[D:/StudyInFPolyTechnic/Lab/Net4/Code/Lab_8_2_Net_4/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
