@@ -1,4 +1,7 @@
-﻿namespace Lab_8_2_Net_4.Models;
+﻿using System;
+using System.Collections.Generic;
+
+namespace Lab_8_2_Net_4.Models;
 
 public partial class CartItem
 {
@@ -13,5 +16,4 @@ public partial class CartItem
     public virtual Cart Cart { get; set; } = null!;
 
     public virtual Product Product { get; set; } = null!;
-
 }
