@@ -21,15 +21,15 @@ namespace Lab_8_2_Net_4.Controllers
         [Route("/")]
         [Route("/Home")]
         [Route("/Home/Index")]
-        public async Task<ActionResult> Index(string catagory = "")
+        public async Task<ActionResult> Index(string category = "")
         {
             var danhMucSanPham = await _context.Categories.ToListAsync();
 
-            if(catagory.IsNullOrEmpty())
+            if(category.IsNullOrEmpty())
             {
-                catagory = "camera";
+                category = "camera";
             }
-            var shopBanCamContext = await _context.Products.Where(p => p.Category.CategoryName == catagory).Include(p => p.Brand).Include(p => p.Category).Include(p => p.ProductImages).ToListAsync();
+            var shopBanCamContext = await _context.Products.Where(p => p.Category.CategoryName == category).Include(p => p.Brand).Include(p => p.Category).Include(p => p.ProductImages).ToListAsync();
 
 
 
